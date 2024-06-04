@@ -1,0 +1,81 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #7da453; /* Green forest background */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Stars background */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* White background for container */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside the container */
+    max-width: 500px; /* Maximum width */
+    margin: 20px auto; /* Center the container horizontally */
+}
+
+h1, p {
+    color: #3e7325; /* Dark green font color */
+}
+
+.jar {
+    background: #c7e1b0; /* Light green jar background */
+    border: 5px solid #5a8c32; /* Dark green jar border */
+    border-radius: 20px; /* Rounded corners */
+    width: 160px; /* Width of the jar */
+    height: 150px; /* Height of the jar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 20px auto; /* Center the jar horizontally */
+}
+
+.jar:before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 30px;
+    background: #5a8c32; /* Dark green lid background */
+    border-radius: 10px 10px 0 0; /* Rounded corners for lid */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for lid */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background: #5a8c32; /* Dark green button background */
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    color: #ffffff; /* White button text color */
+}
+
+button:hover {
+    background: #3e7325; /* Dark green hover background */
+    transform: scale(1.05);
+}
+
+button:active {
+    background: #2b501b; /* Darker green active background */
+    transform: scale(0.95);
+}
+
